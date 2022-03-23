@@ -7,18 +7,11 @@ class events(commands.Cog):
 
     @commands.Cog.event()
     async def event_ready(self):
-        print(
-            f'Logged in as | {self.bot.nick}'
-        )
-        print(
-            f'User id is   | {self.bot.user_id}'
-        )
+        print(f'Logged in as | {self.bot.nick}')
+        print(f'User id is   | {self.bot.user_id}')
 
     @commands.Cog.event()
-    async def event_message(
-        self,
-        message
-    ):
+    async def event_message(self, message):
         print(message.content)
 
 
