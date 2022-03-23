@@ -2,10 +2,7 @@ import twitchio
 from twitchio.ext import commands
 
 class events(commands.Cog):
-    def __init__(
-        self,
-        bot
-    ):
+    def __init__(self, bot):
         self.bot = bot
 
     @commands.Cog.event()
